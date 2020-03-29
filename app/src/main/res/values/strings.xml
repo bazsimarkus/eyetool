@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EyeTool</string>
+    <string name="validation_empty">Validation Empty</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:background="@drawable/back_tut1"
+
+                tools:context=".Tutorial1">
+
+    <Button
+            android:text="Got it"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/lightgreen_button_background"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" android:id="@+id/button2" android:layout_marginBottom="40dp"
+            android:onClick="jumpToNextScreen"/>
+    <TextView
+            android:text="We're going to take a photo of your face using the front camera of your mobile phone."
+            android:layout_width="262dp"
+            android:layout_height="102dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="false" android:id="@+id/textView3"
+            android:background="@drawable/rounded_textbox"
+            android:gravity="center" android:layout_marginTop="20dp"
+           />
+
+</RelativeLayout>

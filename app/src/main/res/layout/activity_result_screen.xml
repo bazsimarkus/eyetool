@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:fitsSystemWindows="true"
+                                             android:background="@drawable/keret3"
+
+                                             tools:context=".ResultScreen" android:id="@+id/relativeLayout">
+
+    <TextView
+            android:layout_width="262dp"
+            android:layout_height="56dp" android:id="@+id/textView3"
+            android:background="@drawable/rounded_textbox"
+            android:gravity="center"
+            android:textSize="32dp" android:text="Your PD value:"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="120dp"/>
+    <TextView
+            android:layout_width="262dp"
+            android:layout_height="56dp" android:id="@+id/pupillaryDistanceBox"
+            android:background="@drawable/rounded_textbox"
+            android:gravity="center"
+            android:textSize="32dp" android:text="pupillaryDistance"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="190dp"/>
+
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="46dp" app:srcCompat="@drawable/eyetool_logo_400px"
+            android:layout_alignParentTop="true" android:id="@+id/imageView2"
+            android:layout_marginTop="50dp" android:layout_alignParentStart="true" android:layout_marginStart="0dp"/>
+
+    <Button
+            android:text="Back to home"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/lightgreen_button_background"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" android:id="@+id/button2" android:layout_marginBottom="20dp"
+            android:onClick="jumpToNextScreen"/>
+
+    <Button
+            android:text="Share result"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/lightgreen_button_background"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" android:id="@+id/shareButton" android:layout_marginBottom="70dp"
+            android:onClick="shareResult"/>
+
+    <Button
+            android:text="Save result"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/lightgreen_button_background"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" android:id="@+id/saveButton" android:layout_marginBottom="120dp"
+            android:onClick="savePdValue"/>
+
+</RelativeLayout>

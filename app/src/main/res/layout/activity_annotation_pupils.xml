@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:background="@drawable/brickwall_blur"
+
+                tools:context=".AnnotationPupils">
+
+    <ImageView
+            android:layout_alignParentTop="true" android:id="@+id/imageViewPupil"
+            android:src="@drawable/ic_image_black_24dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" android:layout_marginTop="100dp"
+            android:layout_alignParentStart="true" android:layout_marginStart="0dp"
+            android:scaleX="2"
+            android:scaleY="2"
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp" app:srcCompat="@drawable/marker2"
+            android:layout_alignParentTop="true" android:id="@+id/markerPupil1" android:layout_marginTop="87dp"
+            android:layout_alignStart="@+id/textViewCard"/>
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp" app:srcCompat="@drawable/marker2"
+            android:layout_alignParentTop="true" android:id="@+id/markerPupil2" android:layout_marginTop="87dp"
+            android:layout_alignStart="@+id/textViewCard"/>
+
+
+    <Button
+            android:text="Done"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/lightgreen_button_background"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" android:id="@+id/button2" android:layout_marginBottom="40dp"
+            android:onClick="jumpToNextScreen"/>
+    <TextView
+            android:text="Move the markers to your pupils!"
+            android:layout_width="340dp"
+            android:layout_height="47dp" android:id="@+id/textViewCard"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="false"
+            android:background="@drawable/rounded_textbox"
+            android:gravity="center" android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>
