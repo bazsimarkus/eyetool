@@ -21,8 +21,8 @@ The user can save the measurement result for later use. This result will be avai
 
 When the app starts up, the welcome screen will greet us with two buttons:
 
-• A "Get Started" button to start the measurement procedure
-• A "See saved PD" where the user can save his / her PD, so once it has been measured, it will not have to be remeasured later, even if it has been forgotten.
+ - A "Get Started" button to start the measurement procedure
+ - A "See saved PD" where the user can save his / her PD, so once it has been measured, it won't have to be remeasured later, even if it has been forgotten.
 
 There are white text bubbles on each screen, that contain the actual task, so the user is never lost.
 When clicking on the application logo some developer info will show up.
@@ -52,13 +52,13 @@ After annotation, the phone calculates the result and shows it on the Result Scr
 
 ## Used tools and technologies
 
-• Android Camera API for capturing and returning images as Bitmap (URI, External Storage Persistent Photo Storage)
-• Runtime permissions to use the camera at a higher API level
-• SharedPreferences Activities to permanently save measurement results
-• Android Send Intent for social sharing.
-• Translucent statusbar in every Activity, depending on the API
-• Touch-based, multilayer ImageView drawing
-• Intuitive UX experience, universal RelativeLayout on all devices
+ - Android Camera API for capturing and returning images as Bitmap (URI, External Storage Persistent Photo Storage)
+ - Runtime permissions to use the camera at a higher API level
+ - SharedPreferences Activities to permanently save measurement results
+ - Android Send Intent for social sharing
+ - Translucent statusbar in every Activity, depending on the API
+ - Touch-based, multilayer ImageView drawing
+ - Intuitive UX experience, universal RelativeLayout on all devices
 
 ## Difficulties during development
 My biggest problem was with older smartphones, especially with Samsung ones. When tested on these devices, the app ran out of heap very quickly, leading to crashes in the application. This was solved by finishing unused Activities and better memory management. (I also set heap-large in the Manifest file) There were also problems with different sizes of photos and UIs on screens of different sizes, which I could eliminate with RelativeLayout. The Intents are only capable of transferring up to 500KB, so I had to solve the storage of photos in External Storage, and then the URI of the images are transferred to the Intents.
